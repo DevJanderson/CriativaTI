@@ -1,0 +1,41 @@
+.s-destaque .container {
+  background-color: #22a094;
+  padding: 42px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Lado Esquerdo (left) */
+.s-destaque .s-left {
+  width: 50%;
+  /* background-color: #F4D387; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-destaque .s-left img {
+  width: 90%;
+}
+
+/* Lado Direito (right) */
+.s-destaque .s-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 42px;
+  gap: 26px;
+  
+}
+
+.s-destaque .s-right h1 {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.s-destaque .s-right p {
+  font-size: 16px;
+  line-height: 26px;
+}

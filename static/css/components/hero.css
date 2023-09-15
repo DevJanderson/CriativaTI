@@ -1,0 +1,76 @@
+/* ESTILO DO HERO DO SITE */
+section .hero-do-site {
+    padding: 40px 4%;
+}
+
+section .hero-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.hero-do-site .left-hero-site {
+    width: 55%;
+    height: calc(100vh - 72px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-do-site .left-hero-site h1{
+    color: var(--txt-color);
+    font-size: 102px;
+    line-height: 120px;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-weight: 400;
+}
+
+
+
+.hero-do-site .left-hero-site p {
+    color: var( --hero-frase );
+    font-size: 20px;
+    padding: 28px 0;
+}
+
+.hero-do-site .left-hero-site strong {
+    color: var(--hero-bold);
+}
+
+/* Lado Direito (right) */
+
+.hero-do-site .right-hero-site {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    min-width: 40%;
+    background-size: 75%;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-do-site .img-hero-site img {
+    width: 85%;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate ;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.box-astronalta {
+    width: 95%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

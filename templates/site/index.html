@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/global.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <title>Criativa T.I</title>
+  </head>
+  <body>
+    <header class="container">
+      <section class="header">
+        <div class="h-logo">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+              />
+            </svg>
+
+            <div>
+              <p>Criativa T.I</p>
+              <span>Software.</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="h-right">
+          <nav>
+            <a href="#" class="n-link">Início</a>
+            <a href="#" class="n-link">Serviços</a>
+            <a href="#" class="n-link">Blog</a>
+          </nav>
+
+          <!-- BTN Light mode -->
+          <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
+          </div>
+
+          <div class="btn-contato">
+            <a href="#">
+              Contato
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- Hero -->
+    <section class="container hero-do-site flex">
+      <div class="left-hero-site">
+        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL.</h1>
+        <p>
+          <strong>Criatividade e inovação andam lado a lado.</strong> Com uma
+          combinação única de design impactante, funcionalidade intuitiva e
+          otimização para resultados, estamos pronto para criar a presença
+          online dos seus sonhos.
+        </p>
+       
+      </div>
+      <!--txt-top-site-->
+
+      <div class="right-hero-site">
+        <div class="img-hero-site">
+          <img src="../static/img/bg-right-hero.png" alt="foto pessoal" />
+        </div>
+        <div class="box-astronalta">
+          <img src="../static/img/hero-astronalta.png" alt="" />
+          
+        </div>
+        
+      </div>
+    </section>
+    <!-- Seção 01 -->
+    
+    {% include "site/components/secao01.html" %}
+
+    {% include "site/components/sec_segmentos.html" %}
+
+    <script src="{% static 'js/darkMode.js' %}"></script>
+  </body>
+</html>

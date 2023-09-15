@@ -1,0 +1,40 @@
+.s-segmentos .container {
+  /* background-color: #22a094; */
+  padding: 42px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Lado Esquerdo (left) */
+.s-segmentos .s-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 42px;
+  gap: 26px;
+}
+
+.s-segmentos .s-left h1 {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.s-segmentos .s-left p {
+  color: var(--txt-color);
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+
+/* Lado Direito (right) */
+.s-segmentos .s-right {
+  width: 50%;
+  
+}
+
+.s-segmentos .s-right img {
+  width: 85%;
+}

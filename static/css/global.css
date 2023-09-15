@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    /* Geral */
+    --bg-color: #232526;
+    --txt-color: #ffffff;
+    --border-color: #ffffff;
+
+    /* Hero Frase */
+    --hero-frase: #8BC3B6;
+    --hero-bold: #C9FF36;
+
+    /* btn DarkMode */
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(/static/img/icons/moon-stars.svg);
+}
+
+.light {
+     /* Geral */
+    --bg-color: #ffffff;
+    --txt-color: #232526;
+
+     /* Hero Frase */
+     --hero-frase: #232526;
+     --hero-bold: #aa147f;
+     /* btn DarkMode */
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url(/static/img/icons/sun.svg);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1298px;
+    margin: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
